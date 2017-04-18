@@ -1,0 +1,36 @@
+{
+  "name": "ionic2-single-line-form",
+  "scripts": {
+    "serve:e2e": "cd example && ionic serve",
+    "e2e": "tsc -p ./config/tsconfig.test.json && concurrently \"npm run serve:e2e\" \"sleep 30 && npm run protractor\" --kill-others --success first",
+    "preprotractor": "webdriver-manager update",
+    "protractor": "protractor ./config/protractor.conf.js",
+    "test": "karma start ./config/karma.conf.js",
+    "build": "gulp",
+    "posttest": "remap-istanbul -i coverage/json/coverage-final.json -o coverage/html -t html"
+  },
+  "version": "0.0.1",
+  "description": "single line form for Ionic 2",
+  "repository": "https://github.com/cperez1087/ionic2-single-line-form.git",
+  "keywords": [
+    "ionic",
+    "ionic2",
+    "component"
+  ],
+  "author": "cperez1087",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cperez1087/ionic2-single-line-form/issues"
+  },
+  "homepage": "https://github.com/cperez1087/ionic2-single-line-form#readme",
+  "peerDependencies": {
+    "ionic-angular": "^3.0.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.3",
+    "karma": "^1.6.0",
+    "protractor": "^5.1.1",
+    "typescript": "~2.2.1",
+    "webpack": "^2.4.1"
+  }
+}
