@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { MULTI_PICKER_DIRECTIVES } from './directives';
+import { SINGLE_LINE_FORM_DIRECTIVES } from './directives';
 
 @NgModule({
-    exports: [MULTI_PICKER_DIRECTIVES],
-    declarations: [MULTI_PICKER_DIRECTIVES]
+    exports: [SINGLE_LINE_FORM_DIRECTIVES],
+    declarations: [SINGLE_LINE_FORM_DIRECTIVES]
 })
-export class MultiPickerModule {
+export class SingleLineFormModule {
 
 } 

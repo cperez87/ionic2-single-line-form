@@ -9,7 +9,7 @@ gulp.task('del', function() {
 });
 
 gulp.task('copyscss', function() {
-    gulp.src('src/components/multi-picker/*.scss').pipe(gulp.dest('dist/components/multi-picker'));
+    //gulp.src('src/components/multi-picker/*.scss').pipe(gulp.dest('dist/components/multi-picker'));
 });
 
 var shell = require('gulp-shell');
@@ -19,7 +19,6 @@ gulp.task('pack', shell.task(['npm pack']));
 gulp.task('post', function(){
     return del(['./config/node_modules', './config/src']);
 });
-
 
 gulp.task('default', function() {
     runSequence('del', 'copyscss', 'ngc', 'pack','post')

@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'selector-name',
-    templateUrl: 'name.component.html'
+    templateUrl: 'basic.page.html'
 })
 
-export class NameComponent {
+export class BasicPage {
     constructor() { }
 }

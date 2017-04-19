@@ -1,2 +1,2 @@
 export * from './directives';
-export { MultiPickerModule } from './module';
+export { SingleLineFormModule } from './module';

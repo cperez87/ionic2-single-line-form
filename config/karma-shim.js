@@ -23,7 +23,7 @@ require('zone.js/dist/fake-async-test');
  we say do this recursively
  */
 var testsContext = require.context('../specs', true, /\.spec\.ts/);
-var componentsContext = require.context('../src/components/multi-picker', true, /multi-picker\.ts/);
+var componentsContext = require.context('../src/components/single-line-container', true, /single-line-container\.component\.ts/);
 //var utilsContext = require.context('../src', true, /util\.ts/);
 
 
@@ -32,7 +32,7 @@ var componentsContext = require.context('../src/components/multi-picker', true, 
 // loop and require those spec files here
 testsContext.keys().forEach(testsContext);
 componentsContext.keys().forEach(componentsContext);
-utilsContext.keys().forEach(utilsContext);
+//utilsContext.keys().forEach(utilsContext);
 
 // Select BrowserDomAdapter.
 // see https://github.com/AngularClass/angular2-webpack-starter/issues/124
