@@ -11,7 +11,10 @@
   },
   "version": "0.0.1",
   "description": "single line form for Ionic 2",
-  "repository": "https://github.com/cperez1087/ionic2-single-line-form.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cperez1087/ionic2-single-line-form.git"
+  },
   "keywords": [
     "ionic",
     "ionic2",
@@ -23,14 +26,47 @@
     "url": "https://github.com/cperez1087/ionic2-single-line-form/issues"
   },
   "homepage": "https://github.com/cperez1087/ionic2-single-line-form#readme",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "peerDependencies": {
     "ionic-angular": "^3.0.0"
   },
   "devDependencies": {
+    "@angular/common": "4.0.0",
+    "@angular/compiler": "4.0.0",
+    "@angular/core": "4.0.0",
+    "@angular/platform-browser": "4.0.0",
+    "@angular/platform-browser-dynamic": "4.0.0",
+    "@angularclass/hmr": "^1.2.2",
+    "@angularclass/hmr-loader": "^3.0.2",
+    "angular2-template-loader": "^0.6.2",
+    "awesome-typescript-loader": "^3.1.2",
+    "copy-webpack-plugin": "^4.0.0",
+    "del": "2.2.2",
+    "file-loader": "^0.9.0",
+    "gulp": "3.9.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "4.3.11",
+    "html-webpack-plugin": "^2.8.1",
+    "istanbul-instrumenter-loader": "^0.2.0",
     "jasmine": "^2.5.3",
     "karma": "^1.6.0",
+    "node-sass": "^4.5.2",
+    "postcss-loader": "^1.1.0",
     "protractor": "^5.1.1",
+    "raw-loader": "^0.5.1",
+    "remap-istanbul": "^0.6.4",
+    "run-sequence": "^1.2.2",
+    "rxjs": "5.1.1",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.0",
+    "ts-helpers": "^1.1.2",
+    "tslint": "^5.1.0",
+    "tslint-eslint-rules": "^4.0.0",
+    "tslint-loader": "^3.5.2",
     "typescript": "~2.2.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.4.1",
+    "webpack-dashboard": "^0.3.0",
+    "zone.js": "^0.8.4"
   }
 }
