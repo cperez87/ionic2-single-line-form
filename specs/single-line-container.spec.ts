@@ -18,10 +18,10 @@ describe("SingleLineContainer", () => {
         comp = fixture.componentInstance;
     });
 
-    it("should not have any components", () => {
-        expect(comp.subComponentsCount).toBe(0);
+    it("should not have slides", () => {
+        expect(comp.slides.length()).toBe(0);
     });
-    
+
     /*it("should discover the visible children", async(inject([TestComponentBuilder], (tcb: TestComponentBuilder) => {
         return tcb
         .createAsync(TestWrapperComponent)

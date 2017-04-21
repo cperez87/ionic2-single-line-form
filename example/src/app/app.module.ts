@@ -5,21 +5,23 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { BasicPage } from '../pages/basic/basic.page';
+import { SingleLineFormModule } from '../../../src/index';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    BasicPage
   ],
   imports: [
     BrowserModule,
+    SingleLineFormModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    BasicPage
   ],
   providers: [
     StatusBar,
